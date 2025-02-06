@@ -1,0 +1,6 @@
+services:
+  app:
+    image: cloudflare/cloudflared:latest 
+    env_file:
+      - .env
+    command: 'tunnel run'
