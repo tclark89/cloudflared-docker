@@ -5,4 +5,10 @@ services:
     restart: always
     env_file:
       - .env
-    command: 'tunnel run'
+    command: 'tunnel --protocol quic run' 
+
+
+networks:
+  default:
+    name: frontend
+    external: true
