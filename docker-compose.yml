@@ -8,7 +8,3 @@ services:
     command: 'tunnel --protocol quic run' 
 
 
-networks:
-  default:
-    name: frontend
-    external: true
